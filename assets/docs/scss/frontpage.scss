@@ -1,0 +1,40 @@
+body.frontpage {
+    #close-sidebar {
+        display: none;
+    }
+    #flexsearch-button {
+        display: none;
+    }
+    .sidebar-content {
+        display: none;
+    }
+    .sidebar-footer {
+        display: none;
+    }
+    #sidebar {
+        height: 72px
+    }
+    @media (max-width: 1199px) {
+        .page-wrapper.toggled #sidebar {
+            left: 0px;
+            z-index: 1000;
+        }
+    }
+    p.lead {
+        display: none;
+    }
+    .docs-content-title-container {
+        display: none !important;
+    }
+    .breadcrumbs {
+        display: none !important;
+    }
+
+    .doc-hr {
+        display: none;
+    }
+
+    main.page-content {
+        padding-left: 0 !important;
+    }
+}
