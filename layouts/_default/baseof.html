@@ -10,7 +10,7 @@
 {{ end }}
 <html lang="{{ site.LanguageCode }}">
     {{- partial (printf "%s/%s" ($.Scratch.Get "pathName") "head.html") . -}}
-    <body>
+    <body {{ if not .IsHome }}class="frontpage"{{ end }}>
         <div class="content">
             <div class="page-wrapper toggled">
                 {{- partial (printf "%s/%s" ($.Scratch.Get "pathName") "sidebar.html") . -}}
